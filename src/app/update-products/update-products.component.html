@@ -1,0 +1,98 @@
+
+  <div class="container">
+    <h3 class="container" style="color: rgba(247, 245, 245, 0.87);">Update Product. <br><br></h3>
+    <div class="container">
+    <form #update="ngForm" (ngSubmit)="onupdate(update)">
+      <div>
+        <div class="form-group">
+        <input 
+          type="text" 
+          style="background-color:rgb(247, 244, 244) ;"
+          class="form-control" 
+          id="product_name" 
+          placeholder="Enter product name"
+          name="product_name"
+          #product_name="ngModel"
+          ngModel
+          [(ngModel)]="products.name"
+          >
+          <br>
+        </div>
+        <div class="form-group">
+            <input 
+              type="text" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="product_type" 
+              placeholder="Enter product type"
+              name="product_type"
+              #product_type="ngModel"
+              ngModel
+              [(ngModel)]="products.type"
+              >
+              <br>
+        </div>
+        <div class="form-group">
+            <input 
+              type="text" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="product_availabilty" 
+              placeholder="Enter product availabilty"
+              name="product_availabilty"
+              #product_availabilty="ngModel"
+              ngModel
+              [(ngModel)]="products.availabilty"
+              >
+              <br>
+        </div>
+        <div class="form-group">
+            <input 
+              type="number" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="product_price" 
+              placeholder="Enter productp rice"
+              name="product_price"
+              #product_price="ngModel"
+              ngModel
+              [(ngModel)]="products.price"
+              >
+              <br>
+        </div>
+        <div class="form-group">
+            <input 
+              type="number" 
+
+              class="form-control" 
+              id="menu_id" 
+              placeholder="Enter menu id"
+              name="menu_id"
+              #menu_id="ngModel"
+              ngModel
+              [(ngModel)]="products.menu.id"
+              >
+              <br>
+        </div>
+        <div class="form-group">
+            <input 
+              type="number" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="manager_id" 
+              placeholder="Enter manager id"
+              name="manager_id"
+              #manager_id="ngModel"
+              ngModel
+              [(ngModel)]="products.menu.manager.id"
+              >
+              <br>
+        </div>
+        
+        
+    
+        <button type="submit"  style="background:none;border-color: rgba(183, 215, 223, 0.847);"class="btn btn-primary">Update</button>
+   
+    </div>
+  
+    

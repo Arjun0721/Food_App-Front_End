@@ -1,0 +1,103 @@
+
+  <h3 class="container" style="color: rgba(247, 245, 245, 0.87);">Enter new Order Details. <br><br></h3>
+  <div class="container">
+  <form #addbranch="ngForm" (ngSubmit)="onadd(addbranch)">
+    <div>
+      <div class="form-group">
+          <input 
+            type="text" 
+            style="background-color:rgb(247, 244, 244) ;"
+            class="form-control" 
+            id="status" 
+            placeholder="Enter Order status"
+            name="status"
+            #status="ngModel"
+            required
+            [(ngModel)]="order1.status"
+            >
+            <br>
+      </div>
+      <div class="form-group">
+            <input 
+            type="text"
+            style="background-color:rgb(247, 244, 244) ;" 
+            class="form-control" 
+            id="otime" 
+            placeholder="Enter Order time"
+            name="otime"
+            #otime="ngModel"
+            required
+            [(ngModel)]="order1.order_time"
+            >
+            <br>
+      </div>
+      <div class="form-group">
+            <input 
+            type="text" 
+            style="background-color:rgb(247, 244, 244) ;"
+            class="form-control" 
+            id="dtime" 
+            placeholder="Enter Deliver time"
+            name="dtime"
+            #dtime="ngModel"
+            required
+            [(ngModel)]="order1.deliver_time"
+            >
+            <br>
+      </div>
+      <div class="form-group">
+            <input 
+            type="text" 
+            style="background-color:rgb(247, 244, 244) ;"
+            class="form-control" 
+            id="c_name" 
+            placeholder="Enter Customer Name"
+            name="c_name"
+            #c_name="ngModel"
+            required
+            [(ngModel)]="order1.customer_name"
+            >
+            <br>
+      </div>
+      <div class="form-group">
+            <input 
+            type="text" 
+            style="background-color:rgb(247, 244, 244) ;"
+            class="form-control" 
+            id="c_number" 
+            placeholder="Enter Customer phone Number"
+            name="c_number"
+            #c_number="ngModel"
+            required
+            [(ngModel)]="order1.customer_number"
+            >
+            <br>
+      </div>
+      <div class="form-group">
+            <input 
+            type="number" 
+            style="background-color:rgb(247, 244, 244) ;"
+            class="form-control" 
+            id="food_price" 
+            placeholder="Enter Food Price"
+            name="food_price"
+            #food_price="ngModel"
+            required
+            [(ngModel)]="order1.total_price"
+            >
+            <br>
+      </div>
+      <div class="form-group">
+            <input 
+            type="number" 
+            style="background-color:rgb(247, 244, 244) ;"
+            class="form-control" 
+            id="staff_id" 
+            placeholder="Enter Your Staff ID"
+            name="staff_id"
+            #staff_id="ngModel"
+            required
+            [(ngModel)]="order1.staff.id"
+            >
+            <br>
+  <button type="submit" style="background:none;border-color: rgba(183, 215, 223, 0.847);" class="btn btn-primary">ADD</button>

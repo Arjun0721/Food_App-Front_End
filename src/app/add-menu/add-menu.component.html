@@ -1,0 +1,38 @@
+
+    <h3 class="container" style="color: rgba(247, 245, 245, 0.87);">Enter new Menu details. <br><br></h3>
+    <div class="container">
+    <form #add="ngForm" (ngSubmit)="onadd(add)">
+      <div>
+        <div class="form-group">
+            <input 
+              type="text" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="name" 
+              placeholder="Enter Menu Name"
+              name="name"
+              #name="ngModel"
+              required
+              [(ngModel)]="menu.name"
+              >
+              <br>
+            </div>
+        <div class="form-group">
+            <input 
+              type="number" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="manager_id" 
+              placeholder="Enter Manager ID"
+              name="manager_id"
+              #manager_id="ngModel"
+              required
+              [(ngModel)]="menu.manager.id"
+              >
+              <br>
+            </div>
+                          
+        <button type="submit" style="background:none;border-color: rgba(183, 215, 223, 0.847);" class="btn btn-primary">ADD</button>
+      <form></form>
+    </div>
+    

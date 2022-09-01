@@ -1,0 +1,112 @@
+<div class="card bg-dark text-black" style="border:none;height: 650px;">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7EFjWCWnfRD-Fi1IX9qNqS8ZSeVZ7Fplh3Q&usqp=CAU" alt="Card image" width="100%" height="100%">
+  <div class="container" class="card-img-overlay" >
+    <h3 class="container" style="color: rgba(247, 245, 245, 0.87);">Update Branch <br><br></h3>
+    <div class="container">
+    <form #update="ngForm" (ngSubmit)="onupdate(update)">
+      <div class="form-group">
+        <input 
+          type="text" 
+          style="background-color:rgb(247, 244, 244) ;"
+          class="form-control" 
+          id="address" 
+          placeholder="Enter branch address"
+          name="address"
+          #address="ngModel"
+          ngModel
+          [(ngModel)]="branch.address"
+          >
+          <br>
+    </div>
+    <div class="form-group">
+        <input 
+          type="text" 
+          style="background-color:rgb(247, 244, 244) ;"
+          class="form-control" 
+          id="phone" 
+          placeholder="Enter branch phone"
+          name="phone"
+          #phone="ngModel"
+          ngModel
+          [(ngModel)]="branch.phone"
+          >
+          <br>
+    </div>
+    <div class="form-group">
+        <input 
+          type="text" 
+          style="background-color:rgb(247, 244, 244) ;"
+          class="form-control" 
+          id="admin.id" 
+          placeholder="Enter admin id"
+          name="admin.id"
+          #admin.id="ngModel"
+          ngModel
+          [(ngModel)]="branch.admin.id"
+          >
+          <br>
+    </div>
+    <div class="form-group">
+        <input 
+          type="text" 
+          style="background-color:rgb(247, 244, 244) ;"
+          class="form-control" 
+          id="name" 
+          placeholder="Enter admin name"
+          name="name"
+          #name="ngModel"
+          ngModel
+          [(ngModel)]="branch.admin.name"
+          >
+          <br>
+    </div>
+    <div class="form-group">
+        <input 
+          type="text" 
+          style="background-color:rgb(247, 244, 244) ;"
+          class="form-control" 
+          id="email" 
+          placeholder="Enter admin email"
+          name="email"
+          #email="ngModel"
+          ngModel
+          [(ngModel)]="branch.admin.email"
+          >
+          <br>
+    </div>
+    <div class="form-group">
+        <input 
+          type="text" 
+          style="background-color:rgb(247, 244, 244) ;"
+          class="form-control" 
+          id="password" 
+          placeholder="Enter admin password"
+          name="password"
+          #password="ngModel"
+          ngModel
+          [(ngModel)]="branch.admin.password"
+          >
+          <br>
+    </div>
+    <div class="form-group">
+        <input 
+          type="text" 
+          style="background-color:rgb(247, 244, 244) ;"
+          class="form-control" 
+          id="role" 
+          placeholder="Enter admin role"
+          name="role"
+          #role="ngModel"
+          ngModel
+          [(ngModel)]="branch.admin.role"
+          >
+          <br>
+        </div>
+      
+        
+        
+    
+        <button type="submit" class="btn btn-primary" style="background:none;border-color: rgba(183, 215, 223, 0.847);">Update</button>
+      </form>
+    </div>
+    

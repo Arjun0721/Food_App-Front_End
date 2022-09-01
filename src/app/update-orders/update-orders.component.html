@@ -1,0 +1,154 @@
+
+    <h3 class="container" style="color: rgba(247, 245, 245, 0.87);">Update Order</h3>
+    <div class="container">
+    <form #update="ngForm" (ngSubmit)="onupdate(update)">
+        <div class="form-group">
+            <input 
+              type="text" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="status" 
+              placeholder="Enter order status"
+              name="status"
+              #status="ngModel"
+              ngModel
+              [(ngModel)]="orders.status"
+              >
+        </div>
+        <div class="form-group">
+            <input 
+              type="number" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="total_price" 
+              placeholder="Enter total price"
+              name="total_price"
+              #total_price="ngModel"
+              ngModel
+              [(ngModel)]="orders.total_price"
+              >
+        </div>
+        <div class="form-group">
+            <input 
+              type="text" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="order_time" 
+              placeholder="Enter order time"
+              name="order_time"
+              #order_time="ngModel"
+              ngModel
+              [(ngModel)]="orders.order_time"
+              >
+        </div>
+        <div class="form-group">
+            <input 
+              type="text" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="deliver_time" 
+              placeholder="Enter deliver time"
+              name="deliver_time"
+              #deliver_time="ngModel"
+              ngModel
+              [(ngModel)]="orders.deliver_time"
+              >
+        </div>
+        <div class="form-group">
+            <input 
+              type="text" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="customer_name" 
+              placeholder="Enter customer name"
+              name="customer_name"
+              #customer_name="ngModel"
+              ngModel
+              [(ngModel)]="orders.customer_name"
+              >
+        </div>
+        <div class="form-group">
+            <input 
+              type="number" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="customer_number" 
+              placeholder="Enter customer number"
+              name="customer_number"
+              #customer_number="ngModel"
+              ngModel
+              [(ngModel)]="orders. customer_number"
+              >
+        </div>
+        <div class="form-group">
+            <input 
+              type="number" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="Staff_ID" 
+              placeholder="Enter Staff ID"
+              name="Staff_ID"
+              #Staff_ID="ngModel"
+              ngModel
+              [(ngModel)]="orders.staff.id"
+              >
+        </div>
+        <div class="form-group">
+            <input 
+              type="text" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="staff_name" 
+              placeholder="Enter staff name"
+              name="staff_name"
+              #staff_name="ngModel"
+              ngModel
+              [(ngModel)]="orders.staff.name"
+              >
+        </div>
+        <div class="form-group">
+            <input 
+              type="email" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="staff_email" 
+              placeholder="Enter staff email"
+              name="staff_email"
+              #staff_email="ngModel"
+              ngModel
+              [(ngModel)]="orders.staff.email"
+              >
+        </div>
+        <div class="form-group">
+            <input 
+              type="password" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="staff_password" 
+              placeholder="Enter staff password"
+              name="staff_password"
+              #staff_password="ngModel"
+              ngModel
+              [(ngModel)]="orders.staff.password"
+              >
+        </div>
+        <div class="form-group">
+            <input 
+              type="tel" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="staff_role" 
+              placeholder="Enter staff role"
+              name="staff_roel"
+              #staff_roel="ngModel"
+              ngModel
+              [(ngModel)]="orders.staff.role"
+              >
+        </div>
+        
+        
+    
+        <button type="submit" style="background:none;border-color: rgba(183, 215, 223, 0.847);" class="btn btn-primary">Update</button>
+   
+
+    

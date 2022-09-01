@@ -1,0 +1,66 @@
+<div class="card bg-dark text-black" style="border:none;height: 650px;">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7EFjWCWnfRD-Fi1IX9qNqS8ZSeVZ7Fplh3Q&usqp=CAU" alt="Card image" width="100%" height="100%">
+  <div class="container" class="card-img-overlay" >
+    <h3 class="container" style="color: rgba(247, 245, 245, 0.87);">Staff Registration <br><br></h3>
+    <div class="container">
+    <form #reg="ngForm" (ngSubmit)="onreg(reg)">
+        <div class="form-group">
+            <input 
+              type="text" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="name" 
+              placeholder="Enter  name"
+              name="name"
+              #name="ngModel"
+              required
+              [(ngModel)]="admin.name"
+              >
+              <br>
+            </div>
+        <div class="form-group">
+            <input 
+              type="email" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="email" 
+              placeholder="Enter  Email"
+              name="email"
+              #email="ngModel"
+              required
+              [(ngModel)]="admin.email"
+              >
+              <br>
+            </div>
+            <div class="form-group">
+              <input 
+                type="password" 
+                style="background-color:rgb(247, 244, 244) ;"
+                class="form-control" 
+                id="password" 
+                placeholder="Enter  Password"
+                name="password"
+                #password="ngModel"
+                required
+                [(ngModel)]="admin.password"
+                >
+                <br>
+              </div>
+              <div class="form-group">
+                <input 
+                  type="text"
+                  style="background-color:rgb(247, 244, 244) ;" 
+                  class="form-control" 
+                  id="role" 
+                  placeholder="Enter Role"
+                  name="role"
+                  #role="ngModel"
+                  required
+                  [(ngModel)]="admin.role"
+                  >
+                  <br>
+                </div>
+    
+        <button type="submit" style="background:none;border-color: rgba(183, 215, 223, 0.847);" class="btn btn-primary" >Register</button>
+
+    

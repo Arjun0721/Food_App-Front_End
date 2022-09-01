@@ -1,0 +1,49 @@
+
+    <h3 class="container" style="color: rgba(247, 245, 245, 0.87);">Edit Your Details. <br><br></h3>
+    <div class="container">
+    <form #update="ngForm" (ngSubmit)="onedit(update)">
+      <div class="form-group">
+        <input 
+          type="text" 
+          style="background-color:rgb(247, 244, 244) ;"
+          class="form-control" 
+          id="name" 
+          placeholder="Your Name"
+          name="name"
+          #name="ngModel"
+          ngModel
+          [(ngModel)]="manager1.name"
+          >
+          <br>
+    </div>
+    <div class="form-group">
+        <input 
+          type="email" 
+          style="background-color:rgb(247, 244, 244) ;"
+          class="form-control" 
+          id="email" 
+          placeholder="Enter email"
+          name="email"
+          #email="ngModel"
+          ngModel
+          [(ngModel)]="manager1.email"
+          >
+          <br>
+    </div>
+    <div>
+    <input 
+    type="password" 
+    style="background-color:rgb(247, 244, 244) ;"
+    class="form-control" 
+    id="password" 
+    placeholder="Enter password"
+    name="password"
+    #password="ngModel"
+    ngModel
+    [(ngModel)]="manager1.password"
+    >
+    <br>
+</div>
+    <button type="submit" style="background:none;border-color: rgba(183, 215, 223, 0.847);" class="btn btn-primary" >Update</button>
+    
+    

@@ -1,0 +1,66 @@
+<div class="container">
+    <h3 style="color: rgba(247, 245, 245, 0.87);">Enter new Branch details. <br><br></h3>
+    <form #addbranch="ngForm" (ngSubmit)="onadd(addbranch)">
+      <div>
+        <div class="form-group">
+            <input 
+              type="text" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="name" 
+              placeholder="Enter Branch Name"
+              name="name"
+              #name="ngModel"
+              required
+              [(ngModel)]="branch.name"
+              >
+              <br>
+            </div>
+        <div class="form-group">
+            <input 
+              type="text" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="address" 
+              placeholder="Enter Branch address"
+              name="address"
+              #address="ngModel"
+              required
+              [(ngModel)]="branch.address"
+              >
+              <br>
+              </div>
+            <div>
+            <div class="form-group">
+              <input 
+                type="text" 
+                style="background-color:rgb(247, 244, 244) ;"
+                class="form-control" 
+                id="phone" 
+                placeholder="Enter Bracnh phone"
+                name="phone"
+                #phone="ngModel"
+                required
+                [(ngModel)]="branch.phone"
+                >
+                <br>
+              </div>
+                <div class="form-group">
+                    <input 
+                      type="number" 
+                      style="background-color:rgb(247, 244, 244) ;"
+                      class="form-control" 
+                      id="admin.id" 
+                      placeholder="Enter Admin ID"
+                      name="admin.id"
+                      #admin.id="ngModel"
+                      required
+                      [(ngModel)]="branch.admin.id"
+                      >
+                      <br>
+          
+        <button type="submit" style="background:none;border-color: rgba(183, 215, 223, 0.847);" class="btn btn-primary">ADD</button>
+      <form></form>
+    </div>
+
+

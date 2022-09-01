@@ -1,0 +1,85 @@
+
+    <h3 class="container" style="color: rgba(247, 245, 245, 0.87);">Enter new Item details. <br><br></h3>
+    <div class="container">
+      
+    <form #add="ngForm" (ngSubmit)="onadd(add)">
+        <div class="form-group">
+            <input 
+              type="text" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="name" 
+              placeholder="Enter Item Name"
+              name="name"
+              #name="ngModel"
+              required
+              [(ngModel)]="items.name"
+              >
+              <br>
+              </div>
+        <div class="form-group">
+            <input 
+              type="number" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="price" 
+              placeholder="Enter Item Price"
+              name="price"
+              #price="ngModel"
+              required
+              [(ngModel)]="items.price"
+              >
+              <br>
+            </div>
+            <div class="form-group">
+            <input 
+              type="quantity" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="quantity" 
+              placeholder="Enter Item Quantity"
+              name="quantity"
+              #quantity="ngModel"
+              required
+              [(ngModel)]="items.quantity"
+              ><br>
+            </div>
+            <div>
+              <div class="form-group">
+            <input 
+              type="text" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="type" 
+              placeholder="Enter Item Type"
+              name="type"
+              #type="ngModel"
+              required
+              [(ngModel)]="items.type"
+              >
+              <br>
+            </div>
+      <div>
+        <div>
+      <div class="form-group">
+            <input 
+              type="number" 
+              style="background-color:rgb(247, 244, 244) ;"
+              class="form-control" 
+              id="order_id" 
+              placeholder="Enter Item Order ID"
+              name="order_id"
+              #order_id="ngModel"
+              required
+              [(ngModel)]="items.orders.id"
+              >
+              <br>
+            </div>
+          </div>
+            
+            
+                          
+<button type="submit" style="background:none;border-color: rgba(183, 215, 223, 0.847);" class="btn btn-primary">ADD</button>
+
+
+    

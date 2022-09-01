@@ -1,0 +1,37 @@
+<div class="card bg-dark text-black" style="border:none;height: 650px;">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7EFjWCWnfRD-Fi1IX9qNqS8ZSeVZ7Fplh3Q&usqp=CAU" alt="Card image" width="100%" height="100%">
+  <div class="container" class="card-img-overlay" >
+    <h3 class="container" style="color: rgba(247, 245, 245, 0.87);">Manager Login Portal <br> <br></h3>
+    <div class="container">
+    <form #login="ngForm" (ngSubmit)="onloginManager(login)">
+        <div class="form-group">
+            <input 
+              style="background-color:rgb(247, 244, 244) ;"
+              type="email" 
+              class="form-control" 
+              id="email" 
+              placeholder="Enter  Email"
+              name="email"
+              #email="ngModel"
+              [(ngModel)]="admin.email"
+              >
+              <br>
+            </div>
+            <div class="form-group">
+              <input 
+                style="background-color:rgb(247, 244, 244) ;"
+                type="password" 
+                class="form-control" 
+                id="password" 
+                placeholder="Enter  password"
+                name="password"
+                #password="ngModel"
+                [(ngModel)]="admin.password"
+                >
+                <br>
+              </div>
+    
+        <button style="background:none;border-color: rgba(183, 215, 223, 0.847);" type="submit" class="btn btn-primary" >Login</button>
+      </form>
+    </div>
+    

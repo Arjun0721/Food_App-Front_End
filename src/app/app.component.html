@@ -1,0 +1,58 @@
+<div class="card bg-dark text-black" style="height: 750px;width: 1550px;;">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7EFjWCWnfRD-Fi1IX9qNqS8ZSeVZ7Fplh3Q&usqp=CAU" alt="Card image" width="100%" height="100%">
+  <div class="card-img-overlay">
+<div class="container">
+<nav class="navbar navbar-expand-lg navbar-dark" style="left: 17%;">
+  <a class="navbar-brand" href="#" routerLink="home">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Login
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#" routerLink="admin">Admin</a>
+          <a class="dropdown-item" href="#" routerLink="manager">Manager</a>
+          <a class="dropdown-item" href="#" routerLink="staff">Staff</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" routerLink="branch">Branch<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" routerLink="menu">Menu<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" routerLink="orders">Orders<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" routerLink="products">Products<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" routerLink="items">items<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Registration
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#" routerLink="admin_reg">Admin</a>
+          <a class="dropdown-item" href="#" routerLink="manager_reg">Manager</a>
+          <a class="dropdown-item" href="#" routerLink="staff_reg">Staff</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" routerLink="account">Account<span class="sr-only">(current)</span></a>
+      </li>
+      <button style="background: none; border: 0ch; color: rgb(237, 242, 243);"  (click)="logout()">Logout</button>
+    </ul>
+
+  </div>
+</nav>
+</div>
+
+<router-outlet></router-outlet>

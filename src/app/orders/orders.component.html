@@ -1,0 +1,40 @@
+<div class="card bg-dark text-black" style="border:none;height: 100%;width: 100%;">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdvOUrFs2hxnOf1WnnyT3p1CmJqaExzM6J5Q&usqp=CAU" alt="Card image" width="100%" height="100%">
+  <div class="container" class="card-img-overlay" >
+<div>
+<button class="btn btn-secondary" style="background:none;border-color: rgba(183, 215, 223, 0.847);" type="button" [routerLink]="['/addorder']" [disabled]="loginstaffrole!=role" >Add Order</button>
+</div>
+<br>
+<table class="table table-dark" style="background: none;">
+    <thead>
+      <tr>
+        <th scope="col" style="color: rgb(0, 0, 0);">Order ID</th>
+        <th scope="col" style="color: rgb(0, 0, 0);">Status</th>
+        <th scope="col" style="color: rgb(0, 0, 0);">Order_Time</th>
+        <th scope="col" style="color: rgb(0, 0, 0);">Delivered_Time</th>
+        <th scope="col" style="color: rgb(0, 0, 0);">Customer_Name</th>
+        <th scope="col" style="color: rgb(0, 0, 0);">Customer_Number</th>
+        <th scope="col" style="color: rgb(0, 0, 0);">Price</th>
+        <th scope="col" style="color: rgb(0, 0, 0);">Staff_ID</th>
+        <th scope="col" style="color: rgb(0, 0, 0);">Edit</th>
+        <th scope="col" style="color: rgb(0, 0, 0);">Delete</th>
+        <th scope="col" style="color: rgb(0, 0, 0);">Bill</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let r of result.t">
+        <td>{{r.id}}</td>
+        <td>{{r.status}}</td>
+        <td>{{r.order_time}}</td>
+        <td>{{r.deliver_time}}</td>
+        <td>{{r.customer_name}}</td>
+        <td>{{r.customer_number}}</td>
+        <td>{{r.total_price}}</td>
+        <td>{{r.staff.id}}</td>
+        <td><button type="button" class="btn btn-primary" style="background:whitesmoke;border-color: rgba(222, 229, 231, 0.847); color: black;" [routerLink]="['/updateorders/',r.id]" [disabled]="loginID!=r.staff.id">Edit</button></td>
+        <td><button type="button" class="btn btn-primary" style="background:whitesmoke;border-color: rgba(222, 229, 231, 0.847); color: black;" (click)="delete(r.id)" [disabled]="loginID!=r.staff.id">Delete</button></td>   
+        <td><button type="button" class="btn btn-primary" style="background:whitesmoke;border-color: rgba(222, 229, 231, 0.847); color: black;" [routerLink]="['/bill/',r.id]" [disabled]="loginID!=r.staff.id">Bill</button></td>
+   
+      </tr>
+    </tbody>
+  </table>
