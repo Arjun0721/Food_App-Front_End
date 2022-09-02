@@ -11,6 +11,7 @@ export class MenuComponent implements OnInit {
   loginID=localStorage.getItem('loginID')
   registeredRole = localStorage.getItem('registeredRole')
   role='Manager'
+  menuID:any
   constructor(private menu:MenuService) { }
 
   ngOnInit(): void {

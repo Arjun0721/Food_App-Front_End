@@ -1,4 +1,5 @@
 import { Orders } from "./orders"
+import { Products } from "./products"
 
 export class Items {
     id!:number
@@ -7,4 +8,5 @@ export class Items {
     quantity!:string
     price!:string
     orders = new Orders()
+    products = new Products()
 }

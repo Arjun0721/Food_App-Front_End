@@ -1,6 +1,4 @@
-<div class="card bg-dark text-black" style="border:none;height: 200%;width:100%;">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdvOUrFs2hxnOf1WnnyT3p1CmJqaExzM6J5Q&usqp=CAU" alt="Card image" width="100%" height="100%" >
-  <div class="container" class="card-img-overlay" >
+
 <div>
 <button class="btn btn-secondary" type="button" [routerLink]="['/addproduct']" style="background:none;border-color: rgba(183, 215, 223, 0.847);" [disabled]="loginmanagerrole!=role" >Add Product</button>
 </div>
@@ -8,15 +6,15 @@
 <table class="table table-dark" style="background:none ;">
     <thead>
       <tr>
-        <th scope="col" style="color: rgb(0, 0, 0);">ID</th>
-        <th scope="col" style="color: rgb(0, 0, 0);">Name</th>
-        <th scope="col" style="color: rgb(0, 0, 0);">Type</th>
-        <th scope="col" style="color: rgb(0, 0, 0);">Avalibality</th>
-        <th scope="col" style="color: rgb(0, 0, 0);">Price</th>
-        <th scope="col" style="color: rgb(0, 0, 0);">Menu ID</th>
-        <th scope="col" style="color: rgb(0, 0, 0);">Manager ID</th>
-        <th scope="col" style="color: rgb(0, 0, 0);">Update</th>
-        <th scope="col" style="color: rgb(0, 0, 0);">Delete</th>
+        <th style="color: rgba(154, 211, 208, 0.799);">ID</th>
+        <th style="color: rgba(154, 211, 208, 0.799);">Name</th>
+        <th style="color: rgba(154, 211, 208, 0.799);">Type</th>
+        <th style="color: rgba(154, 211, 208, 0.799);">Avalibality</th>
+        <th style="color: rgba(154, 211, 208, 0.799);">Price</th>
+        <th style="color: rgba(154, 211, 208, 0.799);">Menu ID</th>
+        <th style="color: rgba(154, 211, 208, 0.799);">Manager ID</th>
+        <th style="color: rgba(154, 211, 208, 0.799);">Edit</th>
+        <th style="color: rgba(154, 211, 208, 0.799);">Delete</th>
         
       </tr>
     </thead>
@@ -29,7 +27,7 @@
         <td>{{r.price}}</td>
         <td>{{r.menu.id}}</td>
         <td>{{r.menu.manager.id}}</td>
-        <td><button type="button" class="btn btn-primary" style="background:whitesmoke;border-color: rgba(222, 229, 231, 0.847); color: black;" [routerLink]="['/updateproducts/',r.id]" [disabled]="loginID!=r.menu.manager.id">Update</button></td>
+        <td><button type="button" class="btn btn-primary" style="background:whitesmoke;border-color: rgba(222, 229, 231, 0.847); color: black;" [routerLink]="['/updateproducts/',r.id]" [disabled]="loginID!=r.menu.manager.id">Edit</button></td>
         <td><button type="button" class="btn btn-primary" style="background:whitesmoke;border-color: rgba(222, 229, 231, 0.847); color: black;" (click)="delete(r.id)" [disabled]="loginID!=r.menu.manager.id">Delete</button></td>
       </tr>
     </tbody>

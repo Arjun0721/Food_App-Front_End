@@ -18,7 +18,6 @@ export class ManagerComponent implements OnInit {
   requiredRoleManager='Manager'
   loginID:any
 
-
   ngOnInit(): void {
     localStorage.setItem('requiredRoleManager',this.requiredRoleManager)
   }
@@ -27,7 +26,6 @@ export class ManagerComponent implements OnInit {
     this.manager.getmanager(this.admin).subscribe((res)=>{
       this.result=res
       console.log(this.result);
-      
       this.registeredRole=this.result.role
       this.loginID=this.result.id
       localStorage.setItem('loginID',this.loginID)

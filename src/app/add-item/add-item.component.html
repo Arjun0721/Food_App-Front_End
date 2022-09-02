@@ -4,7 +4,7 @@
       
     <form #add="ngForm" (ngSubmit)="onadd(add)">
         <div class="form-group">
-            <input 
+            <!-- <input 
               type="text" 
               style="background-color:rgb(247, 244, 244) ;"
               class="form-control" 
@@ -30,7 +30,7 @@
               [(ngModel)]="items.price"
               >
               <br>
-            </div>
+            </div> -->
             <div class="form-group">
             <input 
               type="quantity" 
@@ -45,7 +45,7 @@
               ><br>
             </div>
             <div>
-              <div class="form-group">
+              <!-- <div class="form-group">
             <input 
               type="text" 
               style="background-color:rgb(247, 244, 244) ;"
@@ -58,7 +58,7 @@
               [(ngModel)]="items.type"
               >
               <br>
-            </div>
+            </div> -->
       <div>
         <div>
       <div class="form-group">
@@ -75,6 +75,20 @@
               >
               <br>
             </div>
+            <div class="form-group">
+              <input 
+                type="number" 
+                style="background-color:rgb(247, 244, 244) ;"
+                class="form-control" 
+                id="product_id" 
+                placeholder="Enter product ID"
+                name="product_id"
+                #product_id="ngModel"
+                required
+                [(ngModel)]="items.products.id"
+                >
+                <br>
+              </div>
           </div>
             
             

@@ -1,12 +1,11 @@
-<div class="card bg-dark text-black">
-<img src="https://mma.prnewswire.com/media/1159266/Clarivate_Analytics.jpg?p=facebook" alt="Card image" width="100%" height="100%">
-<div class="container" class="card-img-overlay" >
-    <h3 class="container">Update Orders</h3>
+
+    <h3 class="container" style="color: rgba(247, 245, 245, 0.87);">Generate Bill <br><br></h3>
     <div class="container">
     <form #update="ngForm" (ngSubmit)="onupdate(update)">
-        <div class="form-group">
+        <div class="form-group"> 
             <input 
               type="number" 
+              style="background-color:rgb(247, 244, 244) ;"
               class="form-control" 
               id="id" 
               placeholder="Enter id"
@@ -15,10 +14,12 @@
               ngModel
               [(ngModel)]="bill.id"
               >
+              <br>
         </div>
         <div class="form-group">
             <input 
               type="email" 
+              style="background-color:rgb(247, 244, 244) ;"
               class="form-control" 
               id="email" 
               placeholder="Enter Customer Email"
@@ -27,6 +28,7 @@
               ngModel
               [(ngModel)]="bill.email"
               >
+              <br>
         </div>
         
         

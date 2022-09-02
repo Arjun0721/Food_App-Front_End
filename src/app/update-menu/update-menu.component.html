@@ -1,6 +1,4 @@
-<div class="card bg-dark text-black" style="border:none;height: 650px;">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7EFjWCWnfRD-Fi1IX9qNqS8ZSeVZ7Fplh3Q&usqp=CAU" alt="Card image" width="100%" height="100%">
-  <div class="container" class="card-img-overlay" >
+
     <h3 class="container" style="color: rgba(247, 245, 245, 0.87);">Update Menu.<br><br></h3>
     <div class="container">
     <form #update="ngForm" (ngSubmit)="onupdatemenu(update)">
@@ -19,76 +17,7 @@
           >
           <br>
         </div>
-        <div class="form-group">
-            <input 
-              type="text" 
-              style="background-color:rgb(247, 244, 244) ;"
-              class="form-control" 
-              id="manager.id" 
-              placeholder="Enter manager id"
-              name="manager.id"
-              #manager.id="ngModel"
-              ngModel
-              [(ngModel)]="menu.manager.id"
-              >
-              <br>
-        </div>
-        <div class="form-group">
-            <input 
-              type="text" 
-              style="background-color:rgb(247, 244, 244) ;"
-              class="form-control" 
-              id="manager.name" 
-              placeholder="Enter manager name"
-              name="manager.name"
-              #manager.name="ngModel"
-              ngModel
-              [(ngModel)]="menu.manager.name"
-              >
-              <br>
-        </div>
-        <div class="form-group">
-            <input 
-              type="email"
-              style="background-color:rgb(247, 244, 244) ;" 
-              class="form-control" 
-              id="email" 
-              placeholder="Enter manager email"
-              name="email"
-              #email="ngModel"
-              ngModel
-              [(ngModel)]="menu.manager.email"
-              >
-              <br>
-        </div>
-        <div class="form-group">
-            <input 
-              type="password" 
-              style="background-color:rgb(247, 244, 244) ;"
-              class="form-control" 
-              id="password" 
-              placeholder="Enter manager password"
-              name="password"
-              #password="ngModel"
-              ngModel
-              [(ngModel)]="menu.manager.password"
-              >
-              <br>
-        </div>
-        <div class="form-group">
-            <input 
-              type="text" 
-              style="background-color:rgb(247, 244, 244) ;"
-              class="form-control" 
-              id="role" 
-              placeholder="Enter manager role"
-              name="role"
-              #role="ngModel"
-              ngModel
-              [(ngModel)]="menu.manager.role"
-              >
-              <br>
-        </div>
+        
         
         
     

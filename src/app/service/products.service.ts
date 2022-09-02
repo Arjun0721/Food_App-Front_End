@@ -16,6 +16,10 @@ export class ProductsService {
     return this.http.get("http://localhost:8080/products")
   }
 
+  getby(id:any){
+    return this.http.get(`http://localhost:8080/getbyproducts/${id}`)
+  }
+
   deletedata(id:any){
     return this.http.delete(`http://localhost:8080/deleteproducts/${id}`)
   }

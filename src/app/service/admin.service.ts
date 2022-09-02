@@ -19,7 +19,7 @@ export class AdminService {
   }
 
   update(id:any,admin:any){
-    return this.http.post(`http://localhost:8080/editadmin/${id}`,admin)
+    return this.http.put(`http://localhost:8080/editadmin/${id}`,admin)
   }
 
 
